@@ -17,17 +17,16 @@ int main(){
            cin >> a[a_i];
         }
  
-    int total = 0;
-    for(int a_i = 0;a_i < n;a_i++){
-        total += a[a_i];
-        if(total >= k){
-           cout << "YES" << endl;
+        int total = 0;
+        for(int a_i = 0;a_i < n;a_i++){
+            total += a[a_i];
         }
-        else{
-            cout << "NO" << endl;        
-        }   
+            if(total >= k){
+               cout << "NO" << endl;
+            }
+            else{
+                cout << "YES" << endl;        
+            }   
     }
-  
     return 0;
-    }
 }
