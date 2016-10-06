@@ -1,0 +1,32 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main(){
+    int n, pos=0, neg=0, zero=0;
+    cin >> n;
+    vector<int> arr(n);
+    for(int arr_i = 0;arr_i < n;arr_i++){
+       cin >> arr[arr_i];
+       if(arr[arr_i]>0){
+           pos++;
+       }
+       else if(arr[arr_i]==0){
+           zero++;
+       }
+       else{
+           neg++;
+       }
+    }
+ 
+    cout.precision(6);
+    cout << showpoint << float(pos)/float(n) << endl;
+    cout << showpoint << float(neg)/float(n) << endl;
+    cout << showpoint << float(zero)/float(n) << endl;
+    
+    return 0;
+}
